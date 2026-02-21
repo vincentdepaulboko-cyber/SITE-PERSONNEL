@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.45;
+	padding: 32px;
+	color: #111;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #f6f8fb 0%, #e9f0ff 100%);
+}
+ul, ol { margin: 0 0 1em 0; padding-left: 40px; }
+ul.retrait { padding-left: 40px; list-style-position: outside; }
+ul.pas_de_retrait { padding-left: 0; margin-left: 0; list-style-position: inside; }
+ul.cercle { list-style-type: circle; }
+ul.carre { list-style-type: square; }
+ul.rien, ul.rien li { list-style: none; padding-left: 0; margin-left: 0; }
+li { white-space: pre-wrap; }
+dl dt { font-weight: 700; margin-top: 0.5em; }
+dl dd { margin-left: 1em; margin-bottom: 0.5em; }
+h1, h2 { color: #222; margin-top: 1em; }
+
+.card {
+	background: rgba(255,255,255,0.95);
+	padding: 28px 32px;
+	border-radius: 12px;
+	box-shadow: 0 8px 30px rgba(28,40,60,0.12);
+	max-width: 720px;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.4rem;
+	margin: 0 0 8px;
+	color: #123457;
+	letter-spacing: 0.4px;
+}
+
+p {
+	color: #333;
+	font-size: 1.05rem;
+	margin: 0;
+}
+
+@media (max-width: 480px) {
+	.card { padding: 20px; }
+	h1 { font-size: 1.6rem; }
+}
+
+/* Header / navigation */
+.site-header { background: rgba(255,255,255,0.9); width: 100%; box-shadow: 0 4px 12px rgba(20,30,60,0.06); position: sticky; top: 0; z-index: 30; }
+.header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 16px; padding: 10px 20px; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.site-logo { height: 48px; width: auto; border-radius: 8px; display: block; }
+.site-title { font-size: 1rem; margin: 0; color: #123457; font-weight: 700; letter-spacing: 0.3px; }
+.site-nav a { margin-left: 12px; color: #1a3b6f; text-decoration: none; font-weight: 600; }
+.site-nav a:hover { text-decoration: underline; }
+
+@media (max-width: 680px) {
+	.site-nav { display: none; }
+	.site-title { display: none; }
+	.site-logo { height: 40px; }
+}
+
+/* Small utility */
+.page-content { max-width: 900px; margin: 28px auto; padding: 0 18px; }
+
+.footer { text-align: center; color: #666; font-size: 0.9rem; padding: 24px 0; }
+
+/* Table styling for tableau1 */
+.styled-table { border-collapse: collapse; width: 100%; max-width: 700px; margin: 12px 0; border-radius: 6px; overflow: hidden; box-shadow: 0 6px 18px rgba(20,30,60,0.06); }
+.styled-table thead th { background:#f2f6ff; font-weight:700; padding:12px 14px; text-align:left; }
+.styled-table th, .styled-table td { padding:10px 12px; border-bottom:1px solid #e6e9f0; vertical-align:top; }
+.styled-table tbody tr:nth-child(even){ background:#fcfdff }
+
+.page-content h1{ margin-top:0 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Site Combiné - Vincent de Paul</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.embed-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+		.embed-card { background: #fff; border: 2px solid #e2e8f0; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 24px rgba(16,24,40,0.06); }
+		.embed-header { display:flex; gap:12px; align-items:center; padding:10px 14px; background: linear-gradient(90deg,#f7fbff,#f0f6ff); border-bottom:1px solid #e6eefc; }
+		.embed-title { font-weight:700; color:#0f3b66; }
+		.embed-frame { width:100%; height:420px; border:0; }
+		@media (max-width:900px){ .embed-grid{ grid-template-columns:1fr } .embed-frame{height:360px} }
+	</style>
+</head>
+<body>
+
+	<header class="site-header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">
+				<img src="logo.png.jpeg" alt="logo" class="site-logo">
+				<span class="site-title">Vincent de Paul BOKO</span>
+			</a>
+			<nav class="site-nav">
+				<a href="index.html">Accueil</a>
+				<a href="page1-html">Page 1</a>
+				<a href="page3.html">Page 3</a>
+				<a href="page2-html">CV</a>
+				<a href="page4.html">Listes</a>
+				<a href="tableau1-html">Tableau</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page-content">
+		<h1>Vue combinée des pages</h1>
+		<p>Ci‑dessous les pages et le tableau intégrés. Chaque cadre possède une bordure, un en‑tête coloré et le logo.</p>
+
+		<div class="embed-grid">
+			<section class="embed-card">
+				<div class="embed-header"><img src="logo.png.jpeg" alt="logo" style="height:34px;border-radius:6px"><div class="embed-title">Page d'accueil (page1)</div></div>
+				<iframe class="embed-frame" src="page1-html" title="Page 1"></iframe>
+			</section>
+
+			<section class="embed-card">
+				<div class="embed-header"><img src="logo2png.jpeg" alt="logo2" style="height:34px;border-radius:6px"><div class="embed-title">Présentation (page3)</div></div>
+				<iframe class="embed-frame" src="page3.html" title="Page 3"></iframe>
+			</section>
+
+			<section class="embed-card">
+				<div class="embed-header"><img src="photo.jpeg" alt="photo" style="height:34px;border-radius:6px"><div class="embed-title">CV (page2)</div></div>
+				<iframe class="embed-frame" src="page2-html" title="CV"></iframe>
+			</section>
+
+			<section class="embed-card">
+				<div class="embed-header"><img src="logo.png.jpeg" alt="logo" style="height:34px;border-radius:6px"><div class="embed-title">Listes (page4)</div></div>
+				<iframe class="embed-frame" src="page4.html" title="Listes"></iframe>
+			</section>
+
+			<section class="embed-card" style="grid-column:1 / -1">
+				<div class="embed-header"><img src="logo2png.jpeg" alt="logo2" style="height:34px;border-radius:6px"><div class="embed-title">Tableau intégré</div></div>
+				<iframe class="embed-frame" src="tableau1-html" title="Tableau"></iframe>
+			</section>
+
+		</div>
+	</main>
+
+	<footer class="footer">© Vincent de Paul BOKO</footer>
+
+</body>
+</html>

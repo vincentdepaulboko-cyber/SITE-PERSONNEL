@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//FR" "http://www.w3.org">
+<html xmlns="http://www.w3.org" xml:lang="fr" lang="fr">
+<head>
+    <title>Tableau 1.1 Stylisé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="logo.png.jpeg" alt="logo" class="site-logo">
+                <span class="site-title">Vincent de Paul BOKO</span>
+            </a>
+            <nav class="site-nav">
+                <a href="page1-html">Accueil</a>
+                <a href="page3.html">Bienvenue</a>
+                <a href="page2-html">CV</a>
+                <a href="page4.html">Listes</a>
+                <a href="tableau1-html">Tableau</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+
+    <h1>Tableau 2.1</h1>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <!-- Cellule vide pour l'en-tête de colonne de la première colonne -->
+                <th scope="col"></th> 
+                <th scope="col">Pigier</th>
+                <th scope="col">Spécialité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- L'en-tête de ligne "Faculté / Filière" -->
+                <th scope="row">Faculté / Filière</th>
+                <td>RGL</td>
+                <td>RMS</td>
+            </tr>
+            <tr>
+                <th scope="row"></th> <!-- Cellule vide pour l'alignement -->
+                <td>IADC</td>
+                <td>DAS</td>
+            </tr>
+            <tr>
+                <th scope="row"></th> <!-- Cellule vide pour l'alignement -->
+                <td>CIB</td>
+                <td>GTL</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </main>
+    <footer class="footer">© Vincent de Paul BOKO</footer>
+
+</body>
+</html>

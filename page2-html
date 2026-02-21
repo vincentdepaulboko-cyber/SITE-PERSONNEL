@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CV - BOKO Vincent de Paul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        /* Logo en haut à gauche */
+        .logo-left {
+            float: left;
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        /* Conteneur principal pour titre et photo */
+        .header {
+            position: relative; /* pour positionner le logo droit */
+            text-align: center;
+            overflow: hidden; /* pour que le float du logo ne casse rien */
+            margin-bottom: 40px;
+        }
+
+        /* Photo du logo2 en haut à droite */
+            .logo-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 150px;
+                height: auto;
+                margin: 0;
+                cursor: pointer;
+             }
+
+        /* Photo identité en haut (centrée) */
+        .photo {
+            width: 200px;
+            height: 250px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto 10px; /* pas de marge haute, centrée */
+        }
+
+        /* Sections du CV */
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="logo.png.jpeg" alt="logo" class="site-logo">
+                <span class="site-title">Vincent de Paul BOKO</span>
+            </a>
+            <nav class="site-nav">
+                <a href="page1-html">Accueil</a>
+                <a href="page3.html">Bienvenue</a>
+                <a href="page2-html">CV</a>
+                <a href="page4.html">Listes</a>
+                <a href="tableau1-html">Tableau</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <!-- En-tête : photo en haut, puis nom -->
+        <div class="header">
+            <a href="https://www.enseignementsecondaire.gouv.bj/"><img src="photo.jpeg" alt="photo" class="photo"></a>
+            <h1>BOKO Vincent de Paul</h1>
+            <h3>Étudiant / Développeur web</h3>
+        </div>
+
+    <!-- Informations personnelles -->
+    <h2>I - Informations personnelles</h2>
+    <p><strong>Adresse :</strong> 123 Rue 17, Cotonou, Bénin</p>
+    <p><strong>Téléphone :</strong> +229 0163464103</p>
+    <p><strong>Email :</strong> vincent.boko@gmail.com</p>
+    <p><strong>Situation matrimoniale :</strong> Célibataire sans enfants</p>
+    <p><strong>Date et lieu de naissance :</strong> 12 août 2004 à Cotonou</p>
+    <p><strong>Nationalité :</strong> Béninois</p>
+    <p><strong>Permis de conduire :</strong> Oui</p>
+    
+    <!-- Diplômes -->
+    <h2>II -Mes Diplômes</h2>
+    <ul>
+        <li>CEP – Ecole enfant epanoui </li>
+        <li>BEPC – College Saint Martin </li>
+        <li>Baccalaureat – St Francois </li>
+    </ul>
+
+    <!-- Expériences -->
+    <h2>III - Expériences professionnelles</h2>
+    <ul>
+        <li>Stage développeur web – Entreprise AS WORLD TEACH </li>
+        <li>Projet personnel : site web CV interactif </li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, SQL</li>
+        <li>Git / GitHub</li>
+        <li>Communication et travail en équipe</li>
+    </ul>
+
+    <footer class="footer">© Vincent de Paul BOKO</footer>
+</main>
+</body>
+</html>
